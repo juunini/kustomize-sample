@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: rollouts-demo
-        image: gcr.io/kuar-demo/kuard-amd64:1
+        image: argoproj/rollouts-demo:green
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
