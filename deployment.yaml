@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sample
+  namespace: sample
+spec:
+  selector:
+    matchLabels:
+      app: sample
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: sample
+    spec:
+      containers:
+      - image: gcr.io/kuar-demo/kuard-amd64:1
+        imagePullPolicy: Always
+        name: sample
+        ports:
+        - containerPort: 8080
