@@ -10,7 +10,7 @@ spec:
   tls:
   - hosts:
     - sample-preview.test.tlqkf.wtf
-    secretName: sample-tls
+    secretName: sample-tls-preview
   rules:
   - host: sample-preview.test.tlqkf.wtf
     http:
