@@ -8,7 +8,9 @@ commonLabels:
 
 resources:
 - namespace.yaml
-- deployment.yaml
-- service.yaml
 - issuer.yaml
-- ingress.yaml
+- rollout.yaml
+- service-active.yaml
+- service-preview.yaml
+- ingress-active.yaml
+- ingress-preview.yaml
