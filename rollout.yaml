@@ -16,11 +16,11 @@ spec:
     spec:
       containers:
       - name: rollouts-demo
-        image: argoproj/rollouts-demo:blue
+        image: argoproj/rollouts-demo:green
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
   strategy:
     blueGreen: 
       activeService: sample-active
-      autoPromotionEnabled: false
+      autoPromotionEnabled: true
