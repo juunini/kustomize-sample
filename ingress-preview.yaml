@@ -9,10 +9,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - sample-preview.test.tlqkf.wtf
+    - prev-test.test.tlqkf.wtf
     secretName: sample-tls-preview
   rules:
-  - host: sample-preview.test.tlqkf.wtf
+  - host: prev-test.test.tlqkf.wtf
     http:
       paths:
       - path: /
